@@ -1,0 +1,131 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body {
+	background-color: rgb(238, 241, 244);
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.hamburger-icons {
+	width: 100%;
+	display: flex;
+	padding: 20px 20px 0 0;
+	justify-content: flex-end;
+	font-style: normal;
+	font-size: 36px;
+	color: rgb(21, 181, 245);
+	transform: rotate(-360deg);
+	transition-duration: 0.5s;
+	transition-delay: now;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.sidebar-menu {
+	left: -600px;
+	position: relative;
+	width: 600px;
+	height: 100vh;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	transition: all 500ms linear;
+}
+
+.header-sidebar {
+	padding: 20px 20px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header-sidebar p {
+	text-shadow: 0px 1px 0 #969696, 0 5px 3px #aba8a8;
+	font-size: 36px;
+}
+
+.header-sidebar p span {
+	text-shadow: 0px 1px 0 #969696, 0 5px 3px #aba8a8;
+	color: rgb(21, 181, 245);
+}
+
+.header-sidebar i {
+	font-size: 32px;
+	color: darkred;
+}
+
+.header-sidebar i:hover {
+	transform: rotate(360deg);
+	transition-duration: 0.5s;
+	transition-delay: now;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.header-sidebar i::after {
+	transform: rotate(-360deg);
+	transition-duration: 0.5s;
+	transition-delay: now;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.sidebar-nav {
+	margin-top: -200px;
+	line-height: 70px;
+}
+
+
+.sidebar-nav li {
+	padding: 0 20px;
+	list-style: none;
+}
+
+.sidebar-nav li a {
+	text-decoration: none;
+	color: #617D98;
+	font-size: 28px;
+	letter-spacing: 1px;
+}
+
+.sidebar-nav li:hover {
+	background-color: rgb(199, 232, 246);
+}
+
+.sidebar-social__networks {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+}
+
+.sidebar-social__networks i {
+	font-size: 22px;
+	color: rgb(21, 181, 245);
+	margin-bottom: 40px;
+}
+
+.toggle-hidden {
+	left: 0;
+}
+
+@media (max-width: 700px) {
+	.sidebar-menu {
+		width: 100%;
+	}
+
+	.hamburger-icons {
+		display: none;
+	}
+}

@@ -1,0 +1,113 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+
+body {
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(./fonstola.ru_416224.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.dark {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+}
+
+.dark i:nth-child(1) {
+	font-size: 36px;
+	color: #302650;
+}
+.dark i:nth-child(2) {
+	font-size: 36px;
+	color: white;
+}
+
+.dark .hide {
+	display: none;
+}
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: inherit;
+}
+
+.btn {
+	border: none;
+	background: transparent;
+	font-size: 20px;
+	font-family: inherit;
+	color: #fff; 
+	cursor: pointer;
+}
+
+.show-btn {
+	background-color: #474b4f;
+	padding: 8px 12px;
+	border-radius: 8px;
+	transition: 0.5s;
+}
+
+.show-btn:hover {
+	background-color: #3a3d40;
+}
+
+.modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 600px;
+	width: 100%;
+	background-color: #f4f4f4;
+	padding: 15px;
+	border-radius: 8px;
+	z-index: 100;
+}
+
+.modal-header {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.close-btn {
+	color: #222;
+	font-size: 20px;
+}
+
+.modal-title {
+	margin-bottom: 15px;
+}
+
+.modal-body p {
+	line-height: 25px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.hidden {
+	display: none;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(5px);
+}

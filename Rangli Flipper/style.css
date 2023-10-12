@@ -1,0 +1,59 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+header{
+	width: 100%;
+	height: 7vh;
+	background-color: aliceblue;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+button {
+	cursor: pointer;
+}
+
+.page-name p{
+	color: blue;
+	font-size: 10px;
+}
+
+.simpleHex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+.simpleHex a{
+	border: none;
+	background-color: aliceblue;
+	font-size: 10px;
+	text-decoration: none;
+}
+
+body {
+	height: 93vh;
+	background-color: red;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+.container {
+	width: 100%;
+	height: inherit;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#random-color__text {
+	margin-bottom: 10px;
+	padding: 5px 15px;
+	font-size: 15px;
+	color: white;
+	background-color: black;
+	border-radius: 10px;
+}

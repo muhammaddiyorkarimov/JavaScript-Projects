@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<style>
+		header {
+			transition: all 0.5s ease-in-out;
+		}
+		.navigation-2 {
+			display: none;
+			margin-top: 30px;
+			line-height: 36px;
+			padding-left: 100px;
+		}
+		.navigation-2 li {
+			width: 100vw;
+			list-style: none;
+			transition: all 500ms ease-in-out;
+		}
+
+		.navigation-2 li:hover {
+			padding-left: 30px;
+		}
+		.navigation-2 li:hover {
+			background-color: rgb(207, 237, 248);
+			color: rgb(43, 191, 250);
+		}
+
+		.navigation-2 li a {
+			text-decoration: none;
+			color: black;
+			font-size: 20px;
+			letter-spacing: 1px;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="header-logo">
+				<p>Coding <span>Addict</span></p>
+			</div>
+
+			<div class="navigation">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Projects</a></li>
+				<li><a href="#">Contact</a></li>
+			</div>
+
+			<div class="social-networks">
+				<i class="fa-brands fa-telegram"></i>
+				<i class="fa-brands fa-facebook"></i>
+				<i class="fa-brands fa-instagram"></i>
+			</div>
+
+			<div id="hamburger" class="hamburger">
+				<i class="fa-solid fa-bars"></i>
+			</div>
+		</nav>
+		<div id="nav" class="navigation-2 ">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Projects</a></li>
+			<li><a href="#">Contact</a></li>
+		</div>
+
+	</header>
+</body>
+<script src="./app.js"></script>
+
+</html>

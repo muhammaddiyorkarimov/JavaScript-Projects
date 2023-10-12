@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #111;
+  overflow: hidden;
+}
+
+span {
+  position: absolute;
+  pointer-events: none;
+  -webkit-filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
+  -webkit-animation: fadeInOut 1s linear infinite;
+          animation: fadeInOut 1s linear infinite;
+}
+
+@-webkit-keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+}
+
+span::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: url(../image/heart.png);
+  background-size: cover;
+  -webkit-animation: moveShape 1s linear infinite;
+          animation: moveShape 1s linear infinite;
+}
+
+@-webkit-keyframes moveShape {
+  0% {
+    -webkit-transform: translate(0) rotate(0deg);
+            transform: translate(0) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(300px) rotate(360deg);
+            transform: translate(300px) rotate(360deg);
+  }
+}
+
+@keyframes moveShape {
+  0% {
+    -webkit-transform: translate(0) rotate(0deg);
+            transform: translate(0) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(300px) rotate(360deg);
+            transform: translate(300px) rotate(360deg);
+  }
+}
+/*# sourceMappingURL=main.css.map */
